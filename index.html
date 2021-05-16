@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;700&family=Roboto:wght@400&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
-  <title>Lesson 4</title>
+  <link rel="stylesheet" href="./styles-adaptive.css">
+  <title>AXIT</title>
 </head>
 
 <body>
@@ -29,10 +28,9 @@
 
   <main>
 
-    <section id="header" class="header-section">
-      <div class="flex_Wrapper row">
-        <div class="flex_Wrapper column">
-          <p class="header__logo">AX<span class="text_pink">IT</span></p>
+    <section id="header" class="header-section flex_Wrapper row">
+        <div class="header_Wrapper flex_Wrapper column">
+          <div class="header__logo">AX<span class="text_pink">IT</span></div>
           <h2 class="header__title header__title--light header__title--separator_light">MODERN AXURE TEMPLATE<br>FOR BEAUTIFUL PROTOTYPES</h2>
           <p class="header__subtitle--indents">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.
             Aenean</p>
@@ -40,7 +38,7 @@
             <div class="button text_Button">Download</div>
           </a>
         </div>
-        <div>
+        <div class="form-window">
           <div class="form-header">
             <h3 class="form-header__title">Try Your <span class="text_pink">FREE</span> Trial Today</h3>
             <form class="flyer_Form flex_Wrapper column" action="#" method="POST">
@@ -67,13 +65,12 @@
             <div class="text_Button">Get Started</div>
           </a>
         </div>
-      </div>
     </section>
 
     <section id="social_media" class="social-media flex_Wrapper row">
         <div class="flex_Wrapper column">
           <p class="soc-media__title">Social Media</p>
-          <p class="soc-media__subtitle--indents">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Aenean
+          <p class="soc-media__subtitle--indents">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Aenean
             euismod bibendum laoreet.</p>
         </div>
         <ul class="soc_Icons flex_Wrapper row">
@@ -118,7 +115,7 @@
     <section id="about" class="our-process">
       <h2 class="our-process__title our-process__title--separator_red">WHY THIS IS AWESOME</h2>
       <p class="our-process__subtitle--indents">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <div class="cards_wrapper flex_Wrapper row">
+      <div class="cards-wrapper flex_Wrapper row">
         <div class="card-container">
           <div class="card-container__image"><img src="./images/icons/bulb.svg" alt="bulb"></div>
           <div class="card-container__title card-container__title--indents">Thoughtful Design</div>
@@ -143,51 +140,51 @@
       <h2 class="pricing__title pricing__title--separator_red">PRICING OPTIONS</h2>
       <p class="pricing__subtitle--indents">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <div class="pricing-wrapper flex_Wrapper row">
-        <table class="pricing-container">
-          <thead class="pricing-tablehead">
-            <tr><th class="pricing-tablehead__title pricing-tablehead__title--light">Basic</th></tr>
-            <tr><th class="pricing-tablehead__cost pricing-tablehead__cost--light">$0</th></tr>
-            <tr><th class="pricing-tablehead__description">Free for life</th></tr>
-          </thead>
-          <tbody class="pricing-tablebody">
-            <tr><td>1 gb of space</td></tr>
-            <tr><td>1 gb of space</td></tr>
-            <tr><td>1 gb of space</td></tr>
-            <tr><td>1 gb of space</td></tr>
-            <tr><td>1 gb of space</td></tr>
-            <tr><td>1 gb of space</td></tr>
-          </tbody>
-        </table>
-        <table class="pricing-container">
-          <thead class="pricing-tablehead">
-            <tr><th class="pricing-tablehead__title pricing-tablehead__title--light">Basic</th></tr>
-            <tr><th class="pricing-tablehead__cost pricing-tablehead__cost--light">$0</th></tr>
-            <tr><th class="pricing-tablehead__description">Free for life</th></tr>
-          </thead>
-          <tbody class="pricing-tablebody">
-            <tr><td>1 gb of space</td></tr>
-            <tr><td>1 gb of space</td></tr>
-            <tr><td>1 gb of space</td></tr>
-            <tr><td>1 gb of space</td></tr>
-            <tr><td>1 gb of space</td></tr>
-            <tr><td>1 gb of space</td></tr>
-          </tbody>
-        </table>
-        <table class="pricing-container">
-          <thead class="pricing-tablehead">
-            <tr><th class="pricing-tablehead__title pricing-tablehead__title--light">Basic</th></tr>
-            <tr><th class="pricing-tablehead__cost pricing-tablehead__cost--light">$0</th></tr>
-            <tr><th class="pricing-tablehead__description">Free for life</th></tr>
-          </thead>
-          <tbody class="pricing-tablebody">
-            <tr><td>1 gb of space</td></tr>
-            <tr><td>1 gb of space</td></tr>
-            <tr><td>1 gb of space</td></tr>
-            <tr><td>1 gb of space</td></tr>
-            <tr><td>1 gb of space</td></tr>
-            <tr><td>1 gb of space</td></tr>
-          </tbody>
-        </table>
+        <div class="pricing-container">
+          <div class="pricing-heading">
+            <div class="pricing-heading__title pricing-heading__title--light">Basic</div>
+            <div class="pricing-heading__cost pricing-heading__cost--light">$0</div>
+            <div class="pricing-heading__description">Free for life</div>
+          </div>
+          <ul class="pricing-bonus">
+            <li>1 gb of space</li>
+            <li>1 gb of space</li>
+            <li>1 gb of space</li>
+            <li>1 gb of space</li>
+            <li>1 gb of space</li>
+            <li>1 gb of space</li>
+          </ul>
+        </div>
+        <div class="pricing-container">
+          <div class="pricing-heading">
+            <div class="pricing-heading__title pricing-heading__title--light">Basic</div>
+            <div class="pricing-heading__cost pricing-heading__cost--light">$0</div>
+            <div class="pricing-heading__description">Free for life</div>
+          </div>
+          <ul class="pricing-bonus">
+            <li>1 gb of space</li>
+            <li>1 gb of space</li>
+            <li>1 gb of space</li>
+            <li>1 gb of space</li>
+            <li>1 gb of space</li>
+            <li>1 gb of space</li>
+          </ul>
+        </div>
+        <div class="pricing-container">
+          <div class="pricing-heading">
+            <div class="pricing-heading__title pricing-heading__title--light">Basic</div>
+            <div class="pricing-heading__cost pricing-heading__cost--light">$0</div>
+            <div class="pricing-heading__description">Free for life</div>
+          </div>
+          <ul class="pricing-bonus">
+            <li>1 gb of space</li>
+            <li>1 gb of space</li>
+            <li>1 gb of space</li>
+            <li>1 gb of space</li>
+            <li>1 gb of space</li>
+            <li>1 gb of space</li>
+          </ul>
+        </div>
       </div>
     </section>
 
